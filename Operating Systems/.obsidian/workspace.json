@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "acf7ca14ea0b20b5",
@@ -148,9 +149,19 @@
   },
   "active": "db63d697c4be8868",
   "lastOpenFiles": [
-    "Pasted image 20240415144312.png",
+    "Pasted image 20240415204606.png",
+    "Pasted image 20240415204302.png",
+    "Pasted image 20240415203704.png",
+    "Pasted image 20240415203611.png",
+    "Pasted image 20240415202711.png",
+    "Pasted image 20240415200514.png",
+    "Pasted image 20240415200432.png",
+    "Pasted image 20240415195820.png",
+    "Pasted image 20240415195257.png",
+    "Pasted image 20240415195150.png",
+    "Pasted image 20240415195148.png",
+    "Untitled.md",
     "Week 1 Notes.md",
-    "Pasted image 20240415144308.png",
     "Welcome.md"
   ]
 }
