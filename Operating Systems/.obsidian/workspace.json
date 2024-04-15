@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "acf7ca14ea0b20b5",
@@ -148,7 +148,9 @@
   },
   "active": "db63d697c4be8868",
   "lastOpenFiles": [
-    "Welcome.md",
-    "Week 1 Notes.md"
+    "Pasted image 20240415144312.png",
+    "Week 1 Notes.md",
+    "Pasted image 20240415144308.png",
+    "Welcome.md"
   ]
 }
