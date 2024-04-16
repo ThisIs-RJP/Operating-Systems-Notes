@@ -79,7 +79,7 @@
 - Operating systems provide an environment for execution of programs and services to programs and users
 - Operating-system services provides functions that are helpful to the user:
 	- **User Interface** - Almost all operating systems have a user interface (UI)
-		- Varies between <u>COmmand-Line</u> (CLI),  <u>Graphics User Interface</u> (GUI), touch-screen, Batch...
+		- Varies between <u>Command-Line</u> (CLI),  <u>Graphics User Interface</u> (GUI), touch-screen, Batch...
 	- **Program execution** - The system must be able to <u>load a program into memory and to run that program, end execution, either normally or abnormally (indicating error)</u>
 	- **I/O Operations** - A running program may require I/O, which may involve a file or an I/O device
 	- **File-system manipulation** - Programs need to read and write files and directories, create and delete them, search them, list file information, permission management

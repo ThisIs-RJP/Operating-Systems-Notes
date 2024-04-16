@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a58b41213ed1b11b",
+        "id": "ef3d95d7f27483a9",
         "type": "tabs",
         "children": [
           {
-            "id": "db63d697c4be8868",
+            "id": "ea5053ab3fbfd1b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week 1 Notes.md",
+                "file": "Process & Threads ( Week 3 + Week 4 ).md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "acf7ca14ea0b20b5",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Week 1 Notes.md",
+                "file": "Process & Threads ( Week 3 + Week 4 ).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Week 1 Notes.md",
+                "file": "Process & Threads ( Week 3 + Week 4 ).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,15 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Week 1 Notes.md"
+                "file": "Process & Threads ( Week 3 + Week 4 ).md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -147,21 +147,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db63d697c4be8868",
+  "active": "ea5053ab3fbfd1b5",
   "lastOpenFiles": [
-    "Pasted image 20240415204606.png",
-    "Pasted image 20240415204302.png",
-    "Pasted image 20240415203704.png",
-    "Pasted image 20240415203611.png",
-    "Pasted image 20240415202711.png",
-    "Pasted image 20240415200514.png",
-    "Pasted image 20240415200432.png",
-    "Pasted image 20240415195820.png",
-    "Pasted image 20240415195257.png",
-    "Pasted image 20240415195150.png",
-    "Pasted image 20240415195148.png",
+    "Pasted image 20240416135040.png",
+    "Pasted image 20240416135030.png",
+    "Pasted image 20240416134843.png",
+    "Pasted image 20240416134813.png",
+    "Pasted image 20240416134754.png",
+    "Pasted image 20240416134718.png",
+    "Pasted image 20240416134143.png",
+    "Pasted image 20240416133725.png",
+    "Pasted image 20240416133542.png",
+    "Pasted image 20240416133504.png",
+    "Pasted image 20240416133157.png",
+    "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
+    "Process & Threads ( Week 3 + Week 4 ).md",
     "Untitled.md",
-    "Week 1 Notes.md",
     "Welcome.md"
   ]
 }
