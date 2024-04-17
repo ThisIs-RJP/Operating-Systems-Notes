@@ -65,6 +65,7 @@ A **context switch** occurs when the CPU switches from one process to another
 ![[Pasted image 20240416125930.png]]
 
 # Context Switch
+
 - **Context switch:** 
 	- When CPU switches to another process, the system must **save the state** of the old process and load the **saved state** for the new process
 - And the **Context** of a process represented in the PCB
@@ -72,10 +73,12 @@ A **context switch** occurs when the CPU switches from one process to another
 	- The more complex the OS and the PCB -> the longer the context switch
 
 # Process Creation
+
 - **Parent process(es)** create **children** processes, which, in turn create other processes, forming a **tree** of processes
 - Processes are identified and managed via a **process identifier** (PID)
 
 # Process Creation
+
 - **When we create a new process, some choices might need to be made**
 
 - **Resource sharing options**
@@ -126,7 +129,6 @@ After running ```pstree -p 1```
 ![[Pasted image 20240416132727.png]]
 
 # C Program Forking Separate Process
-e t
 
 # Process Termination
 - Process executes last statement and then asks the OS to delete it using the ```exit()```system call
@@ -181,7 +183,7 @@ e t
 
 # Producer-Consumer Problem
 
-- *Producer* process *produces* information that is *consumed* by a *consumer* process. There is also a <u>buffer</u> they share
+- ***Producer process*** *produces* information that is *consumed* by a *consumer* process. There is also a <u>buffer</u> they share
 - Two variations
 	- **Unbounded-buffer** places no practical limit on the size of the buffer:
 		- Producer never waits
@@ -377,7 +379,7 @@ e t
 
 # User Threads and Kernel Threads
 - **User threads** - management done by user-level threads library
-- **Kernel threads** - **Supported** by the Kernel (meaning of you've 4 kernel threads, these could run on 4 cores e.g pthreads on POSIX UNIX)
+- **Kernel threads** - **Supported** by the Kernel (meaning if you've 4 kernel threads, these could run on 4 cores e.g pthreads on POSIX UNIX)
 - Virtually all general-purpose OS support kernel threads, including:
 	- Windows
 	- Linux

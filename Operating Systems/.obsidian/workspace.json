@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Process & Threads ( Week 3 + Week 4 ).md",
+                "file": "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17e10af6179f1b24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scheduling.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Process & Threads ( Week 3 + Week 4 ).md",
+                "file": "Scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Process & Threads ( Week 3 + Week 4 ).md",
+                "file": "Scheduling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Process & Threads ( Week 3 + Week 4 ).md"
+                "file": "Scheduling.md"
               }
             }
           }
@@ -147,22 +160,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ea5053ab3fbfd1b5",
+  "active": "17e10af6179f1b24",
   "lastOpenFiles": [
-    "images/Pasted image 20240416233005.png",
-    "images/Pasted image 20240416232705.png",
-    "images/Pasted image 20240416235202.png",
-    "images/Pasted image 20240416235016.png",
-    "images/Pasted image 20240416234956.png",
-    "images/Pasted image 20240416233512.png",
-    "images/Pasted image 20240416233501.png",
-    "images/Pasted image 20240416233454.png",
-    "images/Pasted image 20240416233311.png",
-    "images/Pasted image 20240416233150.png",
-    "Pasted image 20240416235202.png",
+    "images/Pasted image 20240417160055.png",
+    "images/Pasted image 20240417160028.png",
+    "images/Pasted image 20240417164559.png",
+    "images/Pasted image 20240417164501.png",
+    "images/Pasted image 20240417163911.png",
+    "images/Pasted image 20240417162712.png",
+    "images/Pasted image 20240417161237.png",
+    "images/Pasted image 20240417160128.png",
+    "images/Pasted image 20240417164334.png",
+    "images/Pasted image 20240417164251.png",
+    "images/Pasted image 20240417164030.png",
+    "Scheduling.md",
+    "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
+    "Untitled 2.md",
     "Process & Threads ( Week 3 + Week 4 ).md",
     "Untitled 1.md",
-    "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
     "Untitled.md",
     "Welcome.md"
   ]

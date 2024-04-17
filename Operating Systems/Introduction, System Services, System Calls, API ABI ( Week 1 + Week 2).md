@@ -193,9 +193,9 @@
 - Most user' view of the OS is <u>defined by system programs, not the actual system calls</u>
 - System Programs provide a convenient environment for program development and execution. 
 	- Some of them are simply user interfaces to system calls; others are considerably more complex
-- **File Management** - Create (touch, mkdir), delete (rm), copy (cp), rename, print, dump, list (ls, find), and generally manipulate files and directories
+- **File Management** - Create (```touch```, ```mkdir```), delete (```rm```), copy (```cp```), rename, print, dump, list (```ls```, ```find```), and generally manipulate files and directories
 - **Status Information**
-	- Some ask the system for info - date (date), time, amount of available memory (free, top), disk space (du), number of users (w)
+	- Some ask the system for info - date (date), time, amount of available memory (```free```, ```top```), disk space (```du```), number of users (```w```)
 	- Others provide detailed performance, logging and debugging information (dmesg)
 	- Typically, these programs format and print the output to the terminal or other output devices
 	- Some systems implement a <u>registry</u> - used to store and retrieve configuration information (Linux)
