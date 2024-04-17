@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bfc5e6f4f006a377",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Main Memory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scheduling.md",
+                "file": "Main Memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Scheduling.md",
+                "file": "Main Memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scheduling.md"
+                "file": "Main Memory.md"
               }
             }
           }
@@ -160,19 +172,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17e10af6179f1b24",
+  "active": "bfc5e6f4f006a377",
   "lastOpenFiles": [
-    "images/Pasted image 20240417160055.png",
-    "images/Pasted image 20240417160028.png",
-    "images/Pasted image 20240417164559.png",
-    "images/Pasted image 20240417164501.png",
-    "images/Pasted image 20240417163911.png",
-    "images/Pasted image 20240417162712.png",
-    "images/Pasted image 20240417161237.png",
-    "images/Pasted image 20240417160128.png",
-    "images/Pasted image 20240417164334.png",
-    "images/Pasted image 20240417164251.png",
-    "images/Pasted image 20240417164030.png",
+    "moveImages.sh",
+    "images/Pasted image 20240417221422.png",
+    "images/Pasted image 20240417221123.png",
+    "images/Pasted image 20240417221111.png",
+    "images/Pasted image 20240417220817.png",
+    "images/Pasted image 20240417214536.png",
+    "images/Pasted image 20240417214534.png",
+    "images/Pasted image 20240417214348.png",
+    "images/Pasted image 20240417213853.png",
+    "images/Pasted image 20240417213355.png",
+    "images/Pasted image 20240417230743.png",
+    "Main Memory.md",
+    "Untitled 3.md",
     "Scheduling.md",
     "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
     "Untitled 2.md",
