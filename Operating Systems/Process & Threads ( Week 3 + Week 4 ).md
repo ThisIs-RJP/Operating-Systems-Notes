@@ -340,6 +340,9 @@ After running ```pstree -p 1```
 ![[Pasted image 20240416232705.png]]
 
 # Multicore Programming
+  
+Multicore programming is about writing software that takes advantage of the multiple processing units (cores) found in modern computer processors. It's all about splitting tasks into smaller pieces that can run simultaneously on different cores, which can improve performance and efficiency. It involves managing concurrency, balancing workloads, and optimising performance to make the most of these multicore architectures.
+
 - **Multicore** or **multiprocessor** systems put pressure on programmers. challenges include:
 	- **Dividing activities**
 	- **Balance**

@@ -50,13 +50,12 @@
               "type": "markdown",
               "state": {
                 "file": "Synchronisation.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Synchronisation.md",
+                "file": "Process & Threads ( Week 3 + Week 4 ).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Synchronisation.md",
+                "file": "Process & Threads ( Week 3 + Week 4 ).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Synchronisation.md"
+                "file": "Process & Threads ( Week 3 + Week 4 ).md"
               }
             }
           }
@@ -185,26 +184,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "208d9e4a3b919ac9",
+  "active": "43fbedc54196b112",
   "lastOpenFiles": [
-    "Pasted image 20240418160501.png",
-    "Pasted image 20240418155840.png",
-    "Pasted image 20240418155449.png",
-    "Pasted image 20240418155300.png",
-    "Pasted image 20240418153734.png",
-    "Pasted image 20240418153709.png",
-    "Process & Threads ( Week 3 + Week 4 ).md",
-    "Synchronisation.md",
-    "Pasted image 20240418153617.png",
-    "Pasted image 20240418152108.png",
-    "Pasted image 20240418151944.png",
-    "Pasted image 20240418151841.png",
-    "Pasted image 20240418151806.png",
-    "Untitled.md",
     "Scheduling.md",
+    "Synchronisation.md",
+    "Pasted image 20240418223028.png",
+    "Pasted image 20240418223014.png",
+    "Pasted image 20240418222716.png",
+    "Pasted image 20240418222704.png",
+    "Pasted image 20240418221708.png",
+    "Untitled 1.md",
+    "Pasted image 20240418221425.png",
+    "Pasted image 20240418220759.png",
+    "Pasted image 20240418220736.png",
+    "Pasted image 20240418220640.png",
+    "Pasted image 20240418215922.png",
+    "Process & Threads ( Week 3 + Week 4 ).md",
+    "Untitled.md",
     "Untitled 3.md",
     "Untitled 2.md",
-    "Untitled 1.md",
     "Main Memory.md",
     "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
     "moveImages.sh",

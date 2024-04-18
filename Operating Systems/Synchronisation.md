@@ -9,6 +9,10 @@
 
 # Race Condition
 
+- Let's say there are two processes, A and B, <u>both trying to access and modify the same variable in memory</u>. Process A wants to increment the variable by 1, and process B wants to decrement it by 1. If there's no mechanism to synchronise their access to the variable, a race condition can occur.
+	- If process A reads the variable's value, then process B reads the same value, both processes increment and decrement respectively, and finally, they write the modified values back to the variable, the final result might be incorrect because each process operated assuming the value hadn't changed.
+	- For instance, if the initial value is 5, both processes read 5, then A increments it to 6, B decrements it to 4, and they both write back their respective values. The expected result would be 5, but due to the race condition, it's 4.
+
 - Processes P0 and P1 are creating child processes using the ```fork()``` system call
 - Race condition on kernel variable ```next_available_pid``` which represents the next available process identifier (pid)
 ![[Pasted image 20240418122822.png]]
@@ -17,12 +21,14 @@
 
 # Critical Section Problem
 
+-  In operating systems, a critical section refers to a segment of code or a region of a program that <u>accesses shared resources (such as variables, data structures, or devices) that must not be simultaneously accessed by multiple threads or processes</u>. It's called "critical" because <u>incorrect execution or concurrent access within this section can lead to race conditions and data inconsistency</u>.
+
 - Consider system of ***n*** processes {*p0*, *p1*, ... *p(n -1)*}
 - Each process has **critical section** segment of code
 	- Process may be changing common variables, updating table, **writing file**, etc
 	- When one process in critical section, **no other may be in its critical section**
 - ***Critical section problem*** is design **protocol to solve this**
-- Often structured: Each process must ask permission to enter critical section in **entry section**, may follow critical section with **exit section**, then **remainder section**
+- Often structured: Each process must <u>ask permission to enter critical section</u> in **entry section**, may follow critical section with **exit section**, then **remainder section**
 - Requirements for solution to critical-section problem
 	- 1. **Mutual Exclusion** - If process ***Pi*** is executing in its critical section, then no other processes can be executing in their critical sections
 	- 2. **Progress** - If no process is executing in its critical section and there exist some processes <u>that wish to enter their critical section</u>, then the selection of the process that will enter the critical section next cannot be postponed indefinitely
@@ -57,6 +63,7 @@
 
 # Correctness of Peterson's Solution
 
+**Note: CS = Critical Section**
 - Provable that the 3 CS requirements are met:
 	- 1. Mutual exclusion is preserved
 		- Pi enters CS only if:
@@ -149,6 +156,14 @@
 	- **Compare-and-Swap** instruction
 
 # The test_and_set instruction
+  
+The `test_and_set` instruction is a fundamental synchronisation primitive used in concurrent programming and operating systems. Its purpose is to atomically test the value of a memory location and set it to a specified value if it meets certain conditions. This atomic operation ensures that no other process or thread can intervene between the test and the set operations, thus providing mutual exclusion for critical sections.
+
+The basic functionality of `test_and_set` can be summarized as follows:
+
+1. Atomically read the current value of a memory location.
+2. Set the memory location to a specified value (usually 1, indicating that the resource is being used or locked).
+3. Return the original value read in step 1.
 
 ![[Pasted image 20240418131816.png]]
 
@@ -165,12 +180,21 @@
 
 # The compare_and_swap Instruction
 
+The purpose of the compare_and_swap instruction is to atomically compare the value of a memory location with an expected value and, if they are equal, update the value of the memory location to a new value. This operation is performed atomically without interruption from other threads or processes, ensuring consistency and providing a way to implement lock-free data structures and algorithms.
+
+The basic functionality of the compare-and-swap instruction can be summarised as follows:
+
+1. Read the current value of a memory location.
+2. Compare the read value with an expected value.
+3. If the read value matches the expected value, update the memory location with a new value.
+4. Return a boolean indicating whether the operation was successful (true if the update was performed, false otherwise).
+
 - Definition
 ![[Pasted image 20240418132054.png]]
 
 - Properties
 	- **Executed atomically**
-	- Returns the original value of passed parameter ``value```
+	- Returns the original value of passed parameter ```value```
 	- Set the variable ```value``` the value of the passed parameter ```new_value``` but only if ```*value == expected``` is true. That is, the swap takes place only under this condition
 
 # Solution using compare_and_swap
@@ -202,6 +226,11 @@
 - Programmers are provided the functionality by the OS to solve the critical section problem
 
 # Mutex Locks
+
+A mutex (short for mutual exclusion) lock is a synchronisation primitive used in concurrent programming to <u>protect shared resources such as variables, data structures, or critical sections of code from simultaneous access by multiple threads or processes</u>. The purpose of a mutex lock is to <u>enforce mutual exclusion, ensuring that only one thread can access the protected resource at any given time</u>, thus preventing data corruption and race conditions.
+
+Mutex locks operate on the principle of ownership: a thread acquires the lock before accessing the protected resource and releases the lock once it's done, allowing other threads to acquire it. While a thread holds the lock, it has exclusive access to the resource, and other threads attempting to acquire the lock are typically blocked or made to wait until it becomes available.
+
 - Previous solutions are complicated and generally inaccessible to application programmers
 - OS designers build software mechanisms to solve the critical section problem
 
@@ -219,6 +248,14 @@
 	![[Pasted image 20240418133713.png]]
 
 # Semaphore
+
+Semaphores are a synchronisation primitive used in concurrent programming and operating systems to control access to shared resources, coordinate the execution of multiple threads or processes, and prevent race conditions.
+
+A semaphore is essentially a counter (non-negative integer) that can be accessed and modified atomically. It supports two primary operations: "wait" (also known as "P" or "down") and "signal" (also known as "V" or "up"). These operations are typically used to control access to shared resources and ensure exclusive access or coordinated execution among multiple threads or processes.
+
+- **Wait Operation (P or down)**: It's like trying to get in line for something. If there are available spots (semaphore value > 0), you can go ahead and take one. If not, you have to wait until there's an open spot.
+    
+- **Signal Operation (V or up)**: It's like announcing you're done with something and leaving. When you finish with a spot, you let others know it's available by signaling. This might allow someone waiting to take your spot.
 
 - Synchronisation primative that provides more sophisticated ways (than Mutex locks) for processes to synchronise their activities
 - Semaphore **S** - integer variable
@@ -561,3 +598,161 @@
 - Requests edge converted to an assignment edge when the resource is allocated to the process
 - When a resource is released by a process, assignment edge reconverts to a claim edge
 - Resources **must be claimed a priori** in the system
+
+# Unsafe State In Resource-Allocation Graph
+![[Pasted image 20240418212906.png]]
+
+# Unsafe State in Resource-Allocation Graph
+
+![[Pasted image 20240418213233.png]]
+
+# Safe, Unsafe, Deadlock State
+
+![[Pasted image 20240418213252.png]]
+
+# Resource-Allocation Graph Algorithm
+
+- Suppose that process Pi requests a resource Rj
+- The request can be granted only if converting the request edge to an assignment edge does not result in the formation of a cycle in the resource allocation graph
+
+# Banker's Algorithm
+
+- <u>Multiple</u> instances of resources
+- Each process must a priori claim <u>maximum</u> use
+- When a process requests a resource, it may have to wait
+
+# Data Structures for the Banker's Algorithm
+
+- Let ***n*** = number of processes, and ***m*** = number of resource types
+	- **Available:** Vector of length *m*. If available [j] = k, there are *k* instances of resource type Rj available
+	- **Max:** *n* x *m* matrix. If Max[i, j] = k, then process Pi may request at most *k* instance of resource type Rj
+	- **Allocation:** *n* x *m* matrix. If Allocation[i,j] = k, then Pi is currently allocated *k* instances of Rj
+	- **Need:** *n* x *m* matrix. If Need[i, j] = k, then Pi may need *k* more instances of Rj to complete its task
+		Need [i,j] = Max[i,j] – Allocation [i,j]
+
+# Safety Algorithm
+
+1. Let ***Work*** and ***Finish*** be vectors of length *m* and *n*, respectively.
+	Initialise:
+		***Work = Available (what's currently available)***
+		***Finish[i] = false for i = 0, 1, ...., n - 1***
+2. Find an ***I (process)*** such that both:
+	a) ***Finish [i] = false***
+	b) ***Need(i) <= Work*** <- *Find a process that we've resources for*
+		if **no** such *i* exists, go to step 4
+3. ***Work = Work + Allocation(i)***
+	***Finish[i] = true***
+		go to step 2
+4. If ***Finish[i] == true*** for all ***i***, then the system is in a safe state
+
+# Resource-Request Algorithm for Process Pi 
+
+***Request(i)*** = request vector for process ***Pi***. If ***Request(i)[j] = k*** then process ***Pi*** wants ***k*** instances of resource type ***Rj***`
+1. If ***Request(i) <= Need(i)*** go to step 2. Otherwise, raise error condition, since process has **exceeded** its **maximum claim**
+2. If ***Request(i) <= Available***, go to step 3. Otherwise, ***Pi***, **must wait**, since resources are not available
+3. **Pretend** to allocate requested resources to ***Pi*** by modifying the state as follows:
+		***Available = Available - Request(i)***
+		***Allocation(i) = Allocation(i)  + Request(i)***
+		***Need(i) = Need(i) - Request(i)***
+4. ***We run our safety algorithm***
+	- If safe => the resources are allocated the ***Pi*** 
+	- If unsafe => ***Pi*** must wait, and the old resource-allocation state is restored
+
+# Example of Banker' s Algorithm
+
+- 5 processes *P0* through *P4*
+	3 resource types
+		![[Pasted image 20240418215134.png]]
+- Snapshot at time *T0*:
+	![[Pasted image 20240418215329.png]]
+- The context of the ***Need*** is defined to be ***Max - Allocation***
+
+	![[Pasted image 20240418215424.png]]
+
+# Example: *P1* Request (1, 0, 2)
+
+- Check that Request <= Available, that is (1, 0, 2) <= (3, 3, 2) => true
+		![[Pasted image 20240418215922.png]]
+- Executing safety algorithm shows that sequence ***<P1, P3, P4, P0, P2>*** satisfies safety requirement
+
+# Example of Banker's Algorithm
+
+- 5 processes *P0* through *P4*:
+	3 resource types:
+		![[Pasted image 20240418220640.png]]
+- **Can request for (0, 2, 0)** by P0 be granted? 
+- Snapshot at time *T0*:
+	![[Pasted image 20240418220736.png]]
+
+# Example of Banker's Algorithm
+![[Pasted image 20240418220759.png]]
+
+# Deadlock detection
+
+- We looked at prevention and avoidance... But perhaps we didn't prevent or avoid deadlock, and just let it happen
+- Allow system to enter deadlock state
+- Use a detection algorithm to know when this happens, and then
+- Recovery scheme
+
+# Single Instance of Each Resource Type
+
+- Maintain **wait-for** graph
+	- Nodes are processes
+	- ***Pi -> Pj*** if ***Pi*** is waiting for ***Pj***
+- Periodically invoke an algorithm that searches for a **cycle** in the graph
+	![[Pasted image 20240418221425.png]]
+
+# Several Instances of a Resource Type
+
+- **Available:** A vector of length **m** indicates the number of available resources of each type
+- **Allocation:** An ***n*** x ***m*** matrix defines the number of resources of each type currently allocated to each process
+- **Request:** An ***n*** x ***m*** matrix indicates the current request of each process. If ***Request```[i][j]``` = k***, then process ***Pi*** is requesting ***k*** more instances of resource type ***Rj***
+
+# Detection Algorithm
+
+1. Let ***Work*** *and* ***Finish*** be vectors of length ***m*** and ***n***, respectively
+	Initialise:
+		a) ***Work = Available***
+		b) For ***i*** **= 1, 2, ..., n**   if ***Allocation(i) != 0***, then
+			***Finished```[i]``` = false***; otherwise ***Finish```[i]``` = true***
+2. Find an index ***i*** such that both:
+	a) ***Finished```[i]```*** **== false**
+	b) ***Request(i) <= Work***
+	If no such ***i*** exists, go to step 4
+3. ***Work = Work + Allocation***
+	***Finish```[i]```= true***
+	go to step 2
+4. If ***Finish```[i]```*** == false, for some ***i***, 1 <= ***i*** <= ***n***, then the system is in deadlock state. Moreover, if ***Finish```[i]``` == false***, then ***Pi*** is deadlocked
+
+# Example of Detection Algorithm
+
+- Five processes ***P0*** through ***P4***; three resource types A (7 instances), B (2 instances), and C (6 instances)
+- Snapshot at time ***T0***:
+	![[Pasted image 20240418222716.png]]
+- Sequence ***<P0, P2, P3, P1, P4>*** will result in ***Finish```[i]```= true*** for all ***i***
+- ***P2*** requests an additional instance of type ***C***
+
+![[Pasted image 20240418223014.png]]
+
+![[Pasted image 20240418223028.png]]
+
+
+# Recovery from Deadlock: **Process Termination**
+
+- Abort all deadlocked processes
+- Abort one process at a time until the deadlock cycle us eliminated
+- In which order should we choose to abort?
+	1. Priority of the process
+	2. How long process has computed, and how much longer to completion
+	3. Resources the process has used
+	4. Resources process needs to complete
+	5. How many processes will need to be terminated
+	6. Is process interactive or batch?
+	7. ....
+
+# Recovery from Deadlock: Resource Preemption
+
+- **Selecting a victim** - minimise cost
+- **Rollback** - return to some safe state, restart process for that state (not always possible though, programs affect real world)
+- **Starvation** - same process may always be picked as victim, include number of rollback in cost factor
+- Messy....
