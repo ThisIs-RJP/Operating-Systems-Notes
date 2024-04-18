@@ -34,6 +34,9 @@
 
 # Address Binding
 
+- Address binding in operating systems refers to the process of associating a logical address (also known as a virtual address) with a physical address in memory.
+	- Address binding is all about making sure that your program knows where everything is located in memory so that it can run smoothly and efficiently,
+
 - Programs on disk, ready to be brought into memory to execute from an **input queue**
 - Addresses represented in different ways at different stages of a program's life
 	- Source code addresses usually symbolic
@@ -77,6 +80,8 @@
 ![[Pasted image 20240417221123.png]]
 
 # Contiguous Allocation
+
+-   Contiguous allocation is a memory allocation technique used by operating systems to assign memory to programs and data in a sequential, contiguous manner.
 
 - Main memory must support both OS and user processes
 - Limited resource, must allocate efficiently
@@ -123,6 +128,9 @@
 - **Internal Fragmentation** - Allocated memory may be slightly larger than requested memory; this size difference is memory internal to a partition, but not being used (this is the case where we break memory into blocks)
 
 # Paging
+
+- Paging is a memory management scheme used by operating systems to efficiently manage and allocate memory. 
+
 - The idea: Physical address space of a process can be non contiguous; process is allocated physical memory where available
 	- Avoids external fragmentation
 	- Avoids problem of varying sized memory chunks

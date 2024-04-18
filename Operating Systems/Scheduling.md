@@ -14,6 +14,7 @@
 - Obtain **Maximum** CPU utilisation with multi-programming
 - CPU-I/O Burst Cycle - Process execution consists of a **cycle** of CPU execution and I/O wait
 - **CPU burst** followed by **I/O burst**
+	- A CPU burst is a period of time where a process executes on the CPU without interruption
 - **CPU burst distribution is of main concern**
 
 # Histogram of CPU-burst Times
@@ -47,6 +48,7 @@
 
 # Dispatcher
 
+- a dispatcher is a component responsible for the context switching between processes.
 - **Dispatch latency** - time it takes for the dispatcher to stop one process and start another running
 - **Dispatch involves** gives control of the CPU to the process selected by the CPU scheduler; this involves:
 	- Switching context
