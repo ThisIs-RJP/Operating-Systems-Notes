@@ -20,13 +20,25 @@
             }
           },
           {
+            "id": "86317c87e4d07255",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "File Systems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "17e10af6179f1b24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Scheduling.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -37,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Synchronisation.md",
+                "file": "File Systems.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "acf7ca14ea0b20b5",
@@ -110,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Synchronisation.md",
+                "file": "File Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Synchronisation.md",
+                "file": "File Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Synchronisation.md"
+                "file": "File Systems.md"
               }
             }
           }
@@ -174,22 +187,23 @@
   },
   "active": "bfc5e6f4f006a377",
   "lastOpenFiles": [
+    "Pasted image 20240419131710.png",
+    "Pasted image 20240419131641.png",
+    "Pasted image 20240419131311.png",
+    "Pasted image 20240419130653.png",
+    "Pasted image 20240419125827.png",
+    "Pasted image 20240419125108.png",
+    "Pasted image 20240419123351.png",
+    "Pasted image 20240419123331.png",
+    "Pasted image 20240419121725.png",
+    "Pasted image 20240419121620.png",
+    "Pasted image 20240419121558.png",
     "Main Memory.md",
     "Synchronisation.md",
-    "Scheduling.md",
+    "File Systems.md",
     "Process & Threads ( Week 3 + Week 4 ).md",
-    "images/Pasted image 20240418223028.png",
-    "images/Pasted image 20240418223014.png",
-    "images/Pasted image 20240418222716.png",
-    "images/Pasted image 20240418222704.png",
-    "images/Pasted image 20240418221708.png",
-    "images/Pasted image 20240418221425.png",
-    "images/Pasted image 20240418220759.png",
-    "images/Pasted image 20240418220736.png",
-    "images/Pasted image 20240418220640.png",
-    "images/Pasted image 20240418215922.png",
+    "Scheduling.md",
     "Untitled 1.md",
-    "Untitled.md",
     "Untitled 3.md",
     "Untitled 2.md",
     "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
