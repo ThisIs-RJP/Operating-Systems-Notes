@@ -573,6 +573,16 @@ A semaphore is essentially a counter (non-negative integer) that can be accessed
 
 # Safe State
 
+1. **Define System State**: Know what resources are allocated to processes.
+    
+2. **Check Resource Availability**: Ensure there are enough resources for each process to run without deadlock.
+    
+3. **Use Algorithms**: Employ methods like the Banker's Algorithm to simulate resource allocation and check for a safe state.
+    
+4. **Implement Policies**: Enforce resource allocation rules to prevent deadlock situations.
+    
+5. **Monitor Continuously**: Keep an eye on resource usage to adapt policies and maintain system safety.
+
 - When a process requests an available resource, system must decide if immediate allocation leaves the system in a **safe state**
 - System is in a **safe state** if there exists a sequence {P1, P2... Pn} of ALL the processes in the system such that for each Pi, the resources that Pi <u>can still request</u> can be satisfied by currently available resources + resources held by all the Pj, with j < i
 	- e.g if we know P3 might need X resources, and Y resources are already in use (by P0, P1, P2), are X+Y <= Available?
@@ -594,6 +604,7 @@ A semaphore is essentially a counter (non-negative integer) that can be accessed
 # Resource-Allocation Graph Scheme
 
 - **Claim edge** Pi -> Rj indicated that process Pj may request resource Rj; represented by a dashed line
+	-  In operating systems, a "claim edge" usually refers to a relationship between processes and resources in a resource allocation graph, often associated with deadlock detection algorithms.
 - Claim edge converts to request edge when a process requests a resource
 - Requests edge converted to an assignment edge when the resource is allocated to the process
 - When a resource is released by a process, assignment edge reconverts to a claim edge
@@ -620,6 +631,20 @@ A semaphore is essentially a counter (non-negative integer) that can be accessed
 - <u>Multiple</u> instances of resources
 - Each process must a priori claim <u>maximum</u> use
 - When a process requests a resource, it may have to wait
+
+Imagine you're a bank manager and you have a bunch of customers (processes) who want loans (resources) from your bank. Each customer has a list of how much of each type of loan they need before they can finish their project.
+
+Here's how it works:
+
+1. **Customers Apply for Loans**: Customers come to your bank and apply for loans. They tell you how much of each type of loan they need to complete their project.
+    
+2. **Check if You Can Grant the Loan**: Before you approve any loan, you check if you have enough of each type of loan available in the bank. If you have enough, great! You can grant the loan. If not, you might have to tell the customer to wait until you have enough resources available.
+    
+3. **Keep Track of Loans**: As you approve loans, you keep track of how much of each type of loan is left in the bank. You don't want to give out so many loans that you run out of resources for other customers.
+    
+4. **Avoid Deadlocks**: You want to make sure that you can always give out loans without causing a situation where everyone is waiting for a loan from the bank and no one can finish their projects. So, you carefully manage the loans you give out to avoid deadlocks.
+    
+5. **Keep the Bank Safe**: Your goal is to keep your bank in a safe state where you can always grant loans without causing a deadlock. You use the Banker's Algorithm to manage your resources efficiently and avoid deadlock situations.
 
 # Data Structures for the Banker's Algorithm
 
@@ -740,7 +765,7 @@ A semaphore is essentially a counter (non-negative integer) that can be accessed
 # Recovery from Deadlock: **Process Termination**
 
 - Abort all deadlocked processes
-- Abort one process at a time until the deadlock cycle us eliminated
+- Abort one process at a time until the deadlock cycle is eliminated
 - In which order should we choose to abort?
 	1. Priority of the process
 	2. How long process has computed, and how much longer to completion

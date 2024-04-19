@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "Scheduling.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -37,25 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Main Memory.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "208d9e4a3b919ac9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Synchronisation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "acf7ca14ea0b20b5",
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Process & Threads ( Week 3 + Week 4 ).md",
+                "file": "Synchronisation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Process & Threads ( Week 3 + Week 4 ).md",
+                "file": "Synchronisation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Process & Threads ( Week 3 + Week 4 ).md"
+                "file": "Synchronisation.md"
               }
             }
           }
@@ -184,8 +172,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "43fbedc54196b112",
+  "active": "bfc5e6f4f006a377",
   "lastOpenFiles": [
+    "Main Memory.md",
+    "Synchronisation.md",
+    "Scheduling.md",
+    "Process & Threads ( Week 3 + Week 4 ).md",
     "images/Pasted image 20240418223028.png",
     "images/Pasted image 20240418223014.png",
     "images/Pasted image 20240418222716.png",
@@ -196,15 +188,10 @@
     "images/Pasted image 20240418220736.png",
     "images/Pasted image 20240418220640.png",
     "images/Pasted image 20240418215922.png",
-    "images/Pasted image 20240418215424.png",
-    "Scheduling.md",
-    "Synchronisation.md",
     "Untitled 1.md",
-    "Process & Threads ( Week 3 + Week 4 ).md",
     "Untitled.md",
     "Untitled 3.md",
     "Untitled 2.md",
-    "Main Memory.md",
     "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
     "moveImages.sh",
     "Welcome.md"

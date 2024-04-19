@@ -126,6 +126,7 @@
 
 - SJF is *akin* priority scheduling where priority is the inverse of predicted next CPU burst time
 - Problem = **Starvation** - low priority processes may never execute
+	- In operating systems, starvation refers to a situation where a process or thread is unable to gain access to the resources it needs for execution, despite being eligible to do so.
 - One Solution is **Ageing** - as time progresses, increase the priority of the process
 
 # Example of Priority Scheduling
