@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dictionary.md",
+                "file": "Memory Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dictionary.md",
+                "file": "Memory Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dictionary.md"
+                "file": "Memory Management.md"
               }
             }
           }
@@ -246,10 +246,10 @@
       }
     ]
   },
-  "active": "5d5d2b925d9b9b00",
+  "active": "e9b0476d1f48d5c5",
   "lastOpenFiles": [
-    "Memory Management.md",
     "Dictionary.md",
+    "Memory Management.md",
     "Synchronisation.md",
     "Scheduling.md",
     "Process & Threads ( Week 3 + Week 4 ).md",
