@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Memory Management.md",
+                "file": "Dictionary.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "acf7ca14ea0b20b5",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Memory Management.md",
+                "file": "Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Memory Management.md",
+                "file": "Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Memory Management.md"
+                "file": "Dictionary.md"
               }
             }
           }
@@ -248,12 +247,12 @@
   },
   "active": "e9b0476d1f48d5c5",
   "lastOpenFiles": [
-    "Dictionary.md",
     "Memory Management.md",
+    "Dictionary.md",
     "Synchronisation.md",
     "Scheduling.md",
     "Process & Threads ( Week 3 + Week 4 ).md",
-    "Pasted image 20240422180423.png",
+    "images/Pasted image 20240422180423.png",
     "File Systems.md",
     "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
     "images/Pasted image 20240419131710.png",
