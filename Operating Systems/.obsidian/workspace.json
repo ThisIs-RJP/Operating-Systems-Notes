@@ -4,11 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "ef3d95d7f27483a9",
+        "id": "f619106dbd757afb",
         "type": "tabs",
         "children": [
           {
-            "id": "43fbedc54196b112",
+            "id": "266e481f370e4e02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "61e862794b6a8c51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "File Systems.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b91082c908dbfebe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,43 +44,43 @@
             }
           },
           {
-            "id": "86317c87e4d07255",
+            "id": "0a4b1a5a4f414d7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "File Systems.md",
+                "file": "Scheduling.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "17e10af6179f1b24",
+            "id": "5882c886c0be1f1f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scheduling.md",
+                "file": "Synchronisation.md",
                 "mode": "preview",
                 "source": false
               }
             }
           },
           {
-            "id": "bfc5e6f4f006a377",
+            "id": "e9b0476d1f48d5c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "File Systems.md",
+                "file": "Memory Management.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -123,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "File Systems.md",
+                "file": "Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "File Systems.md",
+                "file": "Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File Systems.md"
+                "file": "Dictionary.md"
               }
             }
           }
@@ -185,8 +209,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bfc5e6f4f006a377",
+  "floating": {
+    "id": "d1bfb214f2e64628",
+    "type": "floating",
+    "children": [
+      {
+        "id": "b7982f8111b39ddd",
+        "type": "window",
+        "children": [
+          {
+            "id": "92a3b9252277bc1e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5d5d2b925d9b9b00",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dictionary.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1142,
+        "y": 31,
+        "width": 778,
+        "height": 860,
+        "maximize": true,
+        "zoom": 1
+      }
+    ]
+  },
+  "active": "5d5d2b925d9b9b00",
   "lastOpenFiles": [
+    "Memory Management.md",
+    "Dictionary.md",
+    "Synchronisation.md",
+    "Scheduling.md",
+    "Process & Threads ( Week 3 + Week 4 ).md",
+    "Pasted image 20240422180423.png",
+    "File Systems.md",
+    "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
     "images/Pasted image 20240419131710.png",
     "images/Pasted image 20240419131641.png",
     "images/Pasted image 20240419131311.png",
@@ -196,17 +265,9 @@
     "images/Pasted image 20240419123351.png",
     "images/Pasted image 20240419123331.png",
     "images/Pasted image 20240419121725.png",
-    "images/Pasted image 20240419121620.png",
-    "images/Pasted image 20240419121558.png",
-    "Main Memory.md",
-    "Synchronisation.md",
-    "File Systems.md",
-    "Process & Threads ( Week 3 + Week 4 ).md",
-    "Scheduling.md",
     "Untitled 1.md",
     "Untitled 3.md",
     "Untitled 2.md",
-    "Introduction, System Services, System Calls, API ABI ( Week 1 + Week 2).md",
     "moveImages.sh",
     "Welcome.md"
   ]

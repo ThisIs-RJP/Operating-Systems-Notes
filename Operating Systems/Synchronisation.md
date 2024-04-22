@@ -528,7 +528,7 @@ A semaphore is essentially a counter (non-negative integer) that can be accessed
 - Invalidate one of the four necessary conditions for deadlock:
 	- **Mutual Exclusion** - not required for sharable resources (e.g read-only files); must hold for non-sharable resources
 			- Some resources are intrinsically non-sharable
-	- **Hold and  Wait** - Must guarantee that whenever a process requests a resource, it does hold any other resources
+	- **Hold and  Wait** - Must guarantee that whenever a process requests a resource, it doesn't hold any other resources
 		- Require process to request and be allocated all its resources before it begins execution /// allow process to request resources only when the process has none allocated to it
 		- Low resource utilisation; <u>starvation</u> possible
 - **No preemption**:
@@ -604,7 +604,7 @@ A semaphore is essentially a counter (non-negative integer) that can be accessed
 # Resource-Allocation Graph Scheme
 
 - **Claim edge** Pi -> Rj indicated that process Pj may request resource Rj; represented by a dashed line
-	-  In operating systems, a "claim edge" usually refers to a relationship between processes and resources in a resource allocation graph, often associated with deadlock detection algorithms.
+	-  Refers to a dependency relationship between two processes or threads, where one entity claims a resource before another can proceed.
 - Claim edge converts to request edge when a process requests a resource
 - Requests edge converted to an assignment edge when the resource is allocated to the process
 - When a resource is released by a process, assignment edge reconverts to a claim edge
